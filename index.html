@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heladeria DIMI</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <div id="page1" class="main-container">
+    <div class="container-title">
+      <h1 id="titulo">Heladeria DIMI</h1>
+      <div class="date">
+        <div class="dateRight">
+          <div id="dateNumber"></div>
+          <div>
+            <div id="dateMonth"></div>
+            <div id="dateYear"></div>
+          </div>
+        </div>
+        <div>
+          <div id="dateText"></div>
+          <div id="hours"></div>
+        </div>
+
+      </div>
+      <p id="bordo"></p>
+    </div>
+    <div id="container-order">
+      <a href="#page1" class="subtitulo1">Pedido 1</a>
+      <a href="#page2" class="subtitulos">pedido 2</a>
+      <a href="#page3" class="subtitulos">pedido 3</a>
+    </div>
+
+
+
+    <div class="mis-productos">
+      <select id="products">
+        <option data-id="0" value=0>Seleccionar Producto</option>
+        <option data-id="1" value=1500>cono, helado casero</option>
+        <option data-id="2" value=6000>Ensalada de $6000</option>
+        <option data-id="3" value=7000>Ensalada de $7000</option>
+        <option data-id="4" value=9000>Ensalada de $9000</option>
+        <option data-id="5" value=10000>Ensalada de $10000</option>
+        <option data-id="6" value=5000>Estrella de $5000</option>
+        <option data-id="7" value=6000>Estrella de $6000</option>
+        <option data-id="8" value=10000>Piña Helada</option>
+        <option data-id="9" value=7000>Banana Split</option>
+        <option data-id="10" value=8000>Fresa Split</option>
+        <option data-id="11" value=5000>Banano Queso</option>
+        <option data-id="12" value=4000>Helado Chocorramo</option>
+        <option data-id="13" value=7000>Malteada</option>
+        <option data-id="14" value=5000>Helado Corazon</option>
+        <option data-id="15" value=5000>Michelada de soda</option>
+        <option data-id="16" value=10000>Combo Tentacion</option>
+        <option data-id="17" value=8000>Copa Cereza</option>
+        <option data-id="18" value=7000>Copa Oreo</option>
+        <option data-id="19" value=7000>Copa Queso</option>
+        <option data-id="20" value=7000>Copa Arequipe</option>
+        <option data-id="21" value=7000>Copa Kiwi</option>
+        <option data-id="22" value=6000>Brownie con Helado</option>
+        <option data-id="23" value=7000>Sunday Fresa</option>
+        <option data-id="24" value=7000>Fresas con chocolate</option>
+        <option data-id="25" value=7000>Maracumango</option>
+        <option data-id="26" value=2000>Cholado $2000</option>
+        <option data-id="27" value=4000>Cholado $4000</option>
+        <option data-id="28" value=5000>Cholado $5000</option>
+        <option data-id="29" value=4000>Granizado</option>
+        <option data-id="30" value=5000>Milo</option>
+        <option data-id="31" value=700>paleta</option>
+        <option data-id="32" value=2500>chococono</option>
+      </select>
+    </div>
+
+
+
+    <div class="taste">
+      <td>
+        <select id="taste1">
+          <option value="">Elegir Sabor 1</option>
+          <option value="01">Brownie</option>
+          <option value="02">Vainilla Chip</option>
+          <option value="03">Maracuya</option>
+          <option value="04">Mand. Limon</option>
+          <option value="05">Ron con Pasas</option>
+          <option value="06">Arequipe</option>
+          <option value="07">Frutos Rojos</option>
+        </select>
+      </td>
+      <td>
+        <select id="taste2">
+          <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option>
+        </select>
+      </td>
+      <td>
+        <select id="taste3">
+          <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option>
+        </select>
+      </td>
+    </div>
+
+    <div class="buttons">
+      <button id="add-product">Agregar Producto</button>
+      <button id="empty">Eiiminar Productos</button>
+      <button id="buy">Comprar</button>
+    </div>
+
+
+    <div class="container">
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th class="eti">Producto</th>
+            <th class="eti">Precio</th>
+            <th class="eti">Sabor 1</th>
+            <th class="eti">Sabor 2</th>
+            <th class="eti">Sabor 3</th>
+            <th class="eti">Total</th>
+          </tr>
+        </thead>
+        <thead id="tabla">
+
+        </thead>
+
+
+      </table>
+
+    </div>
+  </div>
+  <!-- 777777777777777777777777777777777777777777777777777777777777777777777777777777777777 -->
+  <div>
+    <div id="page2" class="main-container2">
+      <div class="container-title">
+        <h1 id="titulo">Heladeria DIMI</h1>
+        <div class="date2">
+          <div class="dateRight2">
+            <div id="dateNumber2"></div>
+            <div>
+              <div id="dateMonth2"></div>
+              <div id="dateYear2"></div>
+            </div>
+          </div>
+          <div>
+            <div id="dateText2"></div>
+            <div id="hours2"></div>
+          </div>
+
+        </div>
+        <p id="bordo"></p>
+      </div>
+      <div id="container-order">
+        <a href="#page1" class="subtitulos">Pedido 1</a>
+        <a href="#page2" class="subtitulo2">pedido 2</a>
+        <a href="#page3" class="subtitulos">pedido 3</a>
+      </div>
+
+
+
+      <div class="mis-productos">
+        <select id="products2">
+          <option data-id="0" value=0>Seleccionar Producto</option>
+          <option data-id="1" value=1500>cono, helado casero</option>
+          <option data-id="2" value=6000>Ensalada de $6000</option>
+          <option data-id="3" value=7000>Ensalada de $7000</option>
+          <option data-id="4" value=9000>Ensalada de $9000</option>
+          <option data-id="5" value=10000>Ensalada de $10000</option>
+          <option data-id="6" value=5000>Estrella de $5000</option>
+          <option data-id="7" value=6000>Estrella de $6000</option>
+          <option data-id="8" value=10000>Piña Helada</option>
+          <option data-id="9" value=7000>Banana Split</option>
+          <option data-id="10" value=8000>Fresa Split</option>
+          <option data-id="11" value=5000>Banano Queso</option>
+          <option data-id="12" value=4000>Helado Chocorramo</option>
+          <option data-id="13" value=7000>Malteada</option>
+          <option data-id="14" value=5000>Helado Corazon</option>
+          <option data-id="15" value=5000>Michelada de soda</option>
+          <option data-id="16" value=10000>Combo Tentacion</option>
+          <option data-id="17" value=8000>Copa Cereza</option>
+          <option data-id="18" value=7000>Copa Oreo</option>
+          <option data-id="19" value=7000>Copa Queso</option>
+          <option data-id="20" value=7000>Copa Arequipe</option>
+          <option data-id="21" value=7000>Copa Kiwi</option>
+          <option data-id="22" value=6000>Brownie con Helado</option>
+          <option data-id="23" value=7000>Sunday Fresa</option>
+          <option data-id="24" value=7000>Fresas con chocolate</option>
+          <option data-id="25" value=7000>Maracumango</option>
+          <option data-id="26" value=2000>Cholado $2000</option>
+          <option data-id="27" value=4000>Cholado $4000</option>
+          <option data-id="28" value=5000>Cholado $5000</option>
+          <option data-id="29" value=4000>Granizado</option>
+          <option data-id="30" value=5000>Milo</option>
+          <option data-id="31" value=700>paleta</option>
+          <option data-id="32" value=2500>chococono</option>
+        </select>
+      </div>
+
+
+
+      <div class="taste">
+        <td>
+          <select id="taste12">
+            <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option>
+          </select>
+        </td>
+        <td>
+          <select id="taste22">
+            <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option>
+          </select>
+        </td>
+        <td>
+          <select id="taste32">
+            <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option> 
+          </select>
+        </td>
+      </div>
+
+      <div class="buttons">
+        <button id="add-product2">Agregar Producto</button>
+        <button id="empty2">Eiiminar productos</button>
+        <button id="buy2">Comprar</button>
+      </div>
+
+
+
+
+
+      <div class="container">
+        <table class="table">
+
+          <thead>
+            <tr>
+              <th class="eti">Producto</th>
+              <th class="eti">Precio</th>
+              <th class="eti">Sabor 1</th>
+              <th class="eti">Sabor 2</th>
+              <th class="eti">Sabor 3</th>
+              <th class="eti">Total</th>
+            </tr>
+          </thead>
+          <thead id="tabla2">
+
+          </thead>
+
+
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- 777777777777777777777777777777777777777777777777777777777777777777777777777777777777  -->
+  <div>
+    <div id="page3" class="main-container3">
+      <div class="container-title">
+        <h1 id="titulo">Heladeria DIMI</h1>
+        <div class="date3">
+          <div class="dateRight3">
+            <div id="dateNumber3"></div>
+            <div>
+              <div id="dateMonth3"></div>
+              <div id="dateYear3"></div>
+            </div>
+          </div>
+          <div>
+            <div id="dateText3"></div>
+            <div id="hours3"></div>
+          </div>
+
+        </div>
+        <p id="bordo"></p>
+      </div>
+      <div id="container-order">
+        <a href="#page1" class="subtitulos">Pedido 1</a>
+        <a href="#page2" class="subtitulos">pedido 2</a>
+        <a href="#page3" class="subtitulo3">pedido 3</a>
+      </div>
+
+
+
+      <div class="mis-productos">
+        <select id="products3">
+          <option data-id="0" value=0>Seleccionar Producto</option>
+          <option data-id="1" value=1500>cono, helado casero</option>
+          <option data-id="2" value=6000>Ensalada de $6000</option>
+          <option data-id="3" value=7000>Ensalada de $7000</option>
+          <option data-id="4" value=9000>Ensalada de $9000</option>
+          <option data-id="5" value=10000>Ensalada de $10000</option>
+          <option data-id="6" value=5000>Estrella de $5000</option>
+          <option data-id="7" value=6000>Estrella de $6000</option>
+          <option data-id="8" value=10000>Piña Helada</option>
+          <option data-id="9" value=7000>Banana Split</option>
+          <option data-id="10" value=8000>Fresa Split</option>
+          <option data-id="11" value=5000>Banano Queso</option>
+          <option data-id="12" value=4000>Helado Chocorramo</option>
+          <option data-id="13" value=7000>Malteada</option>
+          <option data-id="14" value=5000>Helado Corazon</option>
+          <option data-id="15" value=5000>Michelada de soda</option>
+          <option data-id="16" value=10000>Combo Tentacion</option>
+          <option data-id="17" value=8000>Copa Cereza</option>
+          <option data-id="18" value=7000>Copa Oreo</option>
+          <option data-id="19" value=7000>Copa Queso</option>
+          <option data-id="20" value=7000>Copa Arequipe</option>
+          <option data-id="21" value=7000>Copa Kiwi</option>
+          <option data-id="22" value=6000>Brownie con Helado</option>
+          <option data-id="23" value=7000>Sunday Fresa</option>
+          <option data-id="24" value=7000>Fresas con chocolate</option>
+          <option data-id="25" value=7000>Maracumango</option>
+          <option data-id="26" value=2000>Cholado $2000</option>
+          <option data-id="27" value=4000>Cholado $4000</option>
+          <option data-id="28" value=5000>Cholado $5000</option>
+          <option data-id="29" value=4000>Granizado</option>
+          <option data-id="30" value=5000>Milo</option>
+          <option data-id="31" value=700>paleta</option>
+          <option data-id="32" value=2500>chococono</option>
+        </select>
+      </div>
+
+
+
+      <div class="taste">
+        <td>
+          <select id="taste13">
+            <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option>
+          </select>
+        </td>
+        <td>
+          <select id="taste23">
+            <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option>
+          </select>
+        </td>
+        <td>
+          <select id="taste33">
+            <option value="">Elegir Sabor 1</option>
+            <option value="01">Brownie</option>
+            <option value="02">Vainilla Chip</option>
+            <option value="03">Maracuya</option>
+            <option value="04">Mand. Limon</option>
+            <option value="05">Ron con Pasas</option>
+            <option value="06">Arequipe</option>
+            <option value="07">Frutos Rojos</option>
+          </select>
+        </td>
+      </div>
+
+      <div class="buttons">
+        <button id="add-product3">Agregar Producto</button>
+        <button id="empty3">Eiiminar productos</button>
+        <button id="buy3">Comprar</button>
+      </div>
+
+
+
+
+      <!-- <textarea name="mesa" id="mesa1" cols="30" rows="3" placeholder="Adjuntar nota"></textarea> -->
+      <div class="container">
+        <table class="table">
+
+          <thead>
+            <tr>
+              <th class="eti3">Producto</th>
+              <th class="eti3">Precio</th>
+              <th class="eti3">Sabor 1</th>
+              <th class="eti3">Sabor 2</th>
+              <th class="eti3">Sabor 3</th>
+              <th class="eti3">Total</th>
+            </tr>
+          </thead>
+          <thead id="tabla3">
+
+          </thead>
+
+
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="src/my-knowledge.js"></script>
+<script src="src/index2.js"></script>
+<script src="src/index3.js"></script>
+
+</html>

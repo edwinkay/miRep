@@ -1,0 +1,327 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-shadow: 2px 2px 2px gray;
+  letter-spacing: normal;
+  word-spacing: normal;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container{
+  background-color: hotpink;
+  display: flex;
+  width: 400px;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 250px;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container2{
+  background-color: rgb(190, 4, 4);
+  display: flex;
+  width: 400px;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 250px;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container3{
+  background-color: rgb(5, 1, 252);
+  display: flex;
+  width: 400px;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 250px;
+  flex-direction: column;
+  align-items: center;
+}
+#titulo {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+}
+#bordo {
+  border: 1px solid white;
+  width: 440px;
+}
+#container-order{
+  display: flex;
+  justify-content: center;
+}
+.subtitulo1 {
+  font-size: 22px;
+  color: rgb(247, 247, 250);
+  display: inline-block;
+  border: solid 1px rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(217, 255, 0);
+  text-decoration: none;
+}
+.subtitulo2 {
+  font-size: 22px;
+  color: rgb(247, 247, 250);
+  display: inline-block;
+  border: solid 1px rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(17, 0, 248);
+  text-decoration: none;
+}
+.subtitulo3 {
+  font-size: 22px;
+  color: rgb(247, 247, 250);
+  display: inline-block;
+  border: solid 1px rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(255, 1, 1);
+  text-decoration: none;
+}
+.subtitulos {
+  font-size: 22px;
+  color: rgb(247, 247, 250);
+  display: inline-block;
+  border: solid 1px rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(97, 88, 88);
+  text-decoration: none;
+}
+select{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.mis-productos{
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+.taste{
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 22px 0;
+  gap: 12px;
+}
+button{
+  cursor: pointer;
+}
+#add-product{
+  background-color: rgb(6, 196, 6);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  height: 40px;
+
+}
+#empty{
+  background-color: rgb(255, 0, 13);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
+
+
+
+
+
+.table,
+th,
+td {
+  margin-left: 12px;
+  text-align: center;
+  border: solid 1px rgb(255, 255, 255);
+  color: white;
+}
+.eti {
+  border: solid 1px blue;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+}
+
+
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dateRight{
+  display: flex;
+  align-items: center;
+}
+#dateNumber{
+  font-size: 50px;
+}
+#dateText{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#dateNumber,
+#dateText,
+#dateMonth{
+  font-weight: bold;
+  color: white;
+}
+#dateYear,
+#dateMonth{
+  margin-left: 7px;
+  font-size: 20px;
+  color: white;
+}
+#hours{
+  color: white;
+}
+
+.lax{
+  color: white;
+}
+/* //////////////////////////////////////////////////////////////////////// */
+.date2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dateRight2{
+  display: flex;
+  align-items: center;
+}
+#dateNumber2{
+  font-size: 50px;
+}
+#dateText2{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#dateNumber2,
+#dateText2,
+#dateMonth2{
+  font-weight: bold;
+  color: white;
+}
+#dateYear2,
+#dateMonth2{
+  margin-left: 7px;
+  font-size: 20px;
+  color: white;
+}
+#hours2{
+  color: white;
+}
+#add-product2{
+  background-color: rgb(6, 196, 6);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  height: 40px;
+
+}
+#empty2{
+  background-color: rgb(255, 0, 13);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
+/* ////////////////////////////////////////////////////////// */
+.date3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dateRight3{
+  display: flex;
+  align-items: center;
+}
+#dateNumber3{
+  font-size: 50px;
+}
+#dateText3{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#dateNumber3,
+#dateText3,
+#dateMonth3{
+  font-weight: bold;
+  color: white;
+}
+#dateYear3,
+#dateMonth3{
+  margin-left: 7px;
+  font-size: 20px;
+  color: white;
+}
+#hours3{
+  color: white;
+}
+#add-product3{
+  background-color: rgb(6, 196, 6);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  height: 40px;
+
+}
+#empty3{
+  background-color: rgb(255, 0, 13);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
+.eti3 {
+  border: solid 1px rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.ventana{
+  background-color:aqua;
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:-250px;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#IrVentanaFlotante:target{
+  opacity:1;
+  pointer-events:auto;
+}
+.opcion{/*width: 100px;
+        background-color:yellow;
+border:1px solid black;*/}
