@@ -115,10 +115,9 @@ function print() {
             `<tbody>
            <td>${prod}</td>
            <td>$${precio}</td>
-           <td>${sabor1}</td>
-           <td>${sabor2}</td>
-           <td>${sabor3}</td>
-           <td>$${resSuma}</td>`
+           <td>$${resSuma}</td>
+           <td>${sabor1}<br>${sabor2}<br>${sabor3}</td>
+           `
     }  
     
 }

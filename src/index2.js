@@ -124,10 +124,9 @@ function print2() {
             `<tbody>
            <td>${prod2}</td>
            <td>$${precio2}</td>
-           <td>${sabor12}</td>
-           <td>${sabor22}</td>
-           <td>${sabor32}</td>
-           <td>$${resSuma2}</td>`
+           <td>$${resSuma2}</td>
+           <td>${sabor12}<br>${sabor22}<br>${sabor32}</td>           
+           `
     }  
     
 }

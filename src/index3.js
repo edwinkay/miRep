@@ -125,10 +125,9 @@ function print3() {
             `<tbody>
            <td>${prod3}</td>
            <td>$${precio3}</td>
-           <td>${sabor13}</td>
-           <td>${sabor23}</td>
-           <td>${sabor33}</td>
-           <td>$${resSuma3}</td>`
+           <td>$${resSuma3}</td>
+           <td>${sabor13}<br>${sabor23}<br>${sabor33}</td>
+           `
     }  
     
 }

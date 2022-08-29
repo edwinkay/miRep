@@ -142,7 +142,12 @@ button{
   border-radius: 8px;
   color: white;
 }
-
+#buy{
+background-color: rgb(68, 0, 255);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
 
 
 
@@ -160,9 +165,7 @@ td {
   padding-left: 10px;
   padding-right: 10px;
   background-color: black;
-}
-
-
+  }
 
 .date {
   display: flex;
@@ -245,6 +248,12 @@ td {
   border-radius: 8px;
   color: white;
 }
+#buy2{
+background-color: rgb(68, 0, 255);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
 /* ////////////////////////////////////////////////////////// */
 .date3 {
   display: flex;
@@ -287,6 +296,12 @@ td {
 }
 #empty3{
   background-color: rgb(255, 0, 13);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
+#buy3{
+background-color: rgb(68, 0, 255);
   border: 1px solid white;
   border-radius: 8px;
   color: white;
