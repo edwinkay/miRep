@@ -112,12 +112,14 @@ select{
 .mis-productos{
   display: flex;
   justify-content: center;
-  padding: 12px;
+  padding: 20px 12px 12px 12px;
 }
 .taste{
   display: flex;
   justify-content: center;
   padding: 12px;
+  padding-top: 0px;
+  cursor: pointer;
 }
 .buttons{
   display: flex;
@@ -148,10 +150,6 @@ background-color: rgb(68, 0, 255);
   border-radius: 8px;
   color: white;
 }
-
-
-
-
 .table,
 th,
 td {
@@ -200,6 +198,14 @@ td {
 }
 
 .lax{
+  color: white;
+}
+
+.label{
+  color: white;
+  padding: 0 31px 0 26px;
+}
+.label2{
   color: white;
 }
 /* //////////////////////////////////////////////////////////////////////// */
