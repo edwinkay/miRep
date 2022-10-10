@@ -145,35 +145,35 @@ function eliminar(e) {
  
 }
 
-var pages = {
-    'home': `hola soy edwin`,
+// var pages = {
+//     'home': `hola soy edwin`,
 
-    'aboutus': `un chomincillo <br /><br /><img src='lion2.jpg' style='width:200px;' />`,
+//     'aboutus': `un chomincillo <br /><br /><img src='lion2.jpg' style='width:200px;' />`,
 
-    'services': `Our Services page<br /><br /><img src='lion3.jpg' style='width:200px;' />`,
+//     'services': `Our Services page<br /><br /><img src='lion3.jpg' style='width:200px;' />`,
     
-    'contact': `Our Contact Us page<br /><br /><img src='lion4.jpg' style='width:200px;' />`
-};
+//     'contact': `Our Contact Us page<br /><br /><img src='lion4.jpg' style='width:200px;' />`
+// };
 
-function getPageContent(page) {
-    var contentToReturn;
-    switch (page) {
-        case 'home':
-            contentToReturn = pages.home;
-            break;
-        case 'aboutus':
-            contentToReturn = pages.aboutus;
-            break;
-        case 'services':
-            contentToReturn = pages.services;
-            break;
-        case 'contact':
-            contentToReturn = pages.contact;
-            break;
-        default:
-            contentToReturn = pages.home;
-            break;
-    }
-    document.getElementById('content').innerHTML = contentToReturn;
-}
+// function getPageContent(page) {
+//     var contentToReturn;
+//     switch (page) {
+//         case 'home':
+//             contentToReturn = pages.home;
+//             break;
+//         case 'aboutus':
+//             contentToReturn = pages.aboutus;
+//             break;
+//         case 'services':
+//             contentToReturn = pages.services;
+//             break;
+//         case 'contact':
+//             contentToReturn = pages.contact;
+//             break;
+//         default:
+//             contentToReturn = pages.home;
+//             break;
+//     }
+//     document.getElementById('content').innerHTML = contentToReturn;
+// }
 
